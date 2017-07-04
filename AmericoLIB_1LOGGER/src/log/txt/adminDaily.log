@@ -1,0 +1,30 @@
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: Rooms available in Hotel: 
+{101=Room Number: 101, Room Type: null, Room Price: 0.0
+, 102=Room Number: 102, Room Type: null, Room Price: 0.0
+, 103=Room Number: 103, Room Type: null, Room Price: 0.0
+, 104=Room Number: 104, Room Type: null, Room Price: 0.0
+}
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: this room exists in this hotel => [103]
+[DEBUG] [07-07-2017 04:16:55] log.LogMessage - Is Room Available => true
+
+[WARN ] [07-07-2017 04:16:55] log.LogMessage - WARN: this room does not exists in this hotel => [105]
+[DEBUG] [07-07-2017 04:16:55] log.LogMessage - Is Room Available => false
+
+[ERROR] [07-07-2017 04:16:55] log.LogMessage - ERROR: invalid arguments: room [null] and date [2017-07-07] must be passed as args
+[DEBUG] [07-07-2017 04:16:55] log.LogMessage - Is Room Available => false
+
+[ERROR] [07-07-2017 04:16:55] log.LogMessage - ERROR: invalid arguments: room [105] and date [null] must be passed as args
+[DEBUG] [07-07-2017 04:16:55] log.LogMessage - Is Room Available => false
+
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: this room exists in this hotel => [101]
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: added room to guest => {101=Batalha}
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: for the date [2017-07-07] these are the rooms and guests occupied => {101=Batalha}
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: this room exists in this hotel => [104]
+[DEBUG] [07-07-2017 04:16:55] log.LogMessage - DEBUG: room already taken by another guest => {101=Batalha, 104=Batalha}
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: for the date [2017-07-07] these are the rooms and guests occupied => {101=Batalha, 104=Batalha}
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: this room exists in this hotel => [101]
+[DEBUG] [07-07-2017 04:16:55] log.LogMessage - DEBUG: room already taken by another guest => {101=Batalha, 104=Batalha}
+[ERROR] [07-07-2017 04:16:55] log.LogMessage - Invalid arguments: guest [null] room [101] and date [2017-07-07] must be passed as args
+[ERROR] [07-07-2017 04:16:55] log.LogMessage - Invalid arguments: guest [Batalha] room [null] and date [2017-07-07] must be passed as args
+[ERROR] [07-07-2017 04:16:55] log.LogMessage - Invalid arguments: guest [Batalha] room [101] and date [null] must be passed as args
+[INFO ] [07-07-2017 04:16:55] log.LogMessage - INFO: available rooms are [102, 103]
